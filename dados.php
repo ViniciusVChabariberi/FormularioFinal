@@ -14,17 +14,17 @@
                 <div class="col">
                     <nav class="navbar navbar-expand-lg">
                         <div class="container-fluid">
-                            <a class="navbar-brand" href="#"><h3 id="text">SISTEMA WEB</h3></a>
+                            <a class="navbar-brand" href="#"><h3 class="title">SISTEMA WEB</h3></a>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                             </button>
                             <div class="collapse navbar-collapse" id="navbarNav">
                                 <ul class="navbar-nav">
                                     <li class="nav-item">
-                                        <a class="nav-link active" id="text4" aria-current="page" href="index.php">Cadastrar</a>
+                                        <a class="nav-link active text-white Options" aria-current="page" href="index.php">Cadastrar</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link disabled text-white-50" id="text4" href="dados.php">Consultar</a>
+                                        <a class="nav-link active text-white-50 Options" aria-current="page" href="dados.php">Consultar</a>
                                     </li>
                                 </ul>
                             </div>
@@ -35,26 +35,26 @@
 
             <div class="row">
                 <div class="col">    
-                    <h2 id="text2">Consultar - Contatos Agendados</h2>
+                    <h2 class="subtitle consulta">Consultar - Contatos Agendados</h2>
                 </div>
             </div>   
             
-            <div class="row centralizar"> 
+            <div class="row linha"> 
                 <table class="tabela">
                     <thead>
-                        <tr class="bg-primary nav__novo">
-                            <td class="tabela__dados">Nome</td>
-                            <td class="tabela__dados">Telefone</td>
-                            <td class="tabela__dados">Origem</td>
-                            <td class="tabela__dados">Contato</td>
-                            <td class="tabela__dados">Observação</td>
-                            <td class="tabela__dados">Ação</td>
+                        <tr class="bg-primary tabela_linha">
+                            <td class="tabela_dados">Nome</td>
+                            <td class="tabela_dados">Telefone</td>
+                            <td class="tabela_dados">Origem</td>
+                            <td class="tabela_dados">Contato</td>
+                            <td class="tabela_dados">Observação</td>
+                            <td class="tabela_dados">Ação</td>
                         </tr>
                     </thead>
 
                     <tbody>
                         <tr>
-                            <td>
+                            <td class="tabela_c">
                                 <?php
                                 require_once("class.php");
                                 $principal = new Principal();
@@ -62,7 +62,7 @@
                                 echo $principal->getNome();
                                 ?>
                             </td>
-                            <td>
+                            <td class="tabela_c">
                                 <?php
                                 require_once("class.php");
                                 $principal = new Principal();
@@ -70,7 +70,7 @@
                                 echo $principal->getTelefone();
                                 ?>
                             </td>
-                            <td>
+                            <td class="tabela_c">
                                 <?php
                                 require_once("class.php");
                                 $principal = new Principal();
@@ -78,7 +78,7 @@
                                 echo $principal->getOrigem();
                                 ?>
                             </td>
-                            <td>
+                            <td class="tabela_c">
                                 <?php
                                 require_once("class.php");
                                 $principal = new Principal();
@@ -86,7 +86,7 @@
                                 echo $principal->getData();
                                 ?>
                             </td>
-                            <td>
+                            <td class="tabela_c">
                                 <?php
                                 require_once("class.php");
                                 $principal = new Principal();
@@ -98,6 +98,9 @@
                     </tbody>
                 </table>   
             </div>
-        </div>        
+        <br>
+        <br>
+        <br>      
+        </div>      
     </body>        
 </html>                

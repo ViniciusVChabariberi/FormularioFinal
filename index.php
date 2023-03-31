@@ -14,17 +14,17 @@
                 <div class="col">
                     <nav class="navbar navbar-expand-lg">
                         <div class="container-fluid">
-                            <a class="navbar-brand" href="#"><h3 id="text">SISTEMA WEB</h3></a>
+                            <a class="navbar-brand" href="#"><h3 class="title">SISTEMA WEB</h3></a>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                             </button>
                             <div class="collapse navbar-collapse" id="navbarNav">
                                 <ul class="navbar-nav">
                                     <li class="nav-item">
-                                        <a class="nav-link active" id="text4" aria-current="page" href="index.php">Cadastrar</a>
+                                        <a class="nav-link active text-white Options" aria-current="page" href="index.php">Cadastrar</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link disabled text-white-50" id="text4" href="dados.php">Consultar</a>
+                                        <a class="nav-link active text-white-50 Options"  aria-current="page" href="dados.php">Consultar</a>
                                     </li>
                                 </ul>
                             </div>
@@ -34,51 +34,51 @@
             </div>
             <div class="row">
                 <div class="col">
-                <p id="text2">Cadastrar - Agendamento de Potenciais Clientes</p>
-                <p id="text3">Sistema utilizado para Agendamento de serviços.</p>
+                <p class="subtitle">Cadastrar - Agendamento de Potenciais Clientes</p>
+                <p class="subtitle_two">Sistema utilizado para Agendamento de serviços.</p>
                 </div>
             </div>
             <div class="row">    
-            <div class="col formulario">
-                <form method="POST" action="dados.php">
-                    <div class="mb-3">
-                        <label id="text5" for="nome">Nome:</label> 
-                        <input type="text" class="form-control" name="nome" id="nome" required>
-                    </div>  
+                <div class="col formulario">
+                    <form method="POST" action="dados.php">
+                        <div class="mb-3">
+                            <label class="formulario_titulos" for="nome">Nome:</label> 
+                            <input type="text" class="form-control" name="nome" id="nome" required>
+                        </div>  
 
-                    <div class="mb-3">
-                        <label id="text5" for="tele">Telefone:</label> 
-                        <input type="tel" class="form-control" placeholder="(xx)xxxxx-xxxx" name="telefone" id="telefone" required>
-                    </div> 
+                        <div class="mb-3">
+                            <label class="formulario_titulos" for="tele">Telefone:</label> 
+                            <input type="tel" class="form-control" placeholder="(xx)xxxxx-xxxx" name="telefone" id="telefone" required>
+                        </div> 
 
-                    <div class="mb-3">
-                        <label for="select" class="form-label">Origem:</label>
-                        <select class="form-select" name="origem" id="origem">
-                            <option value="celular">Celular</option>
-                            <option value="fixo">Smart TV</option>
-                            <option value="computador">Computador</option>
-                            <option value="notebook">Notebook</option>
-                        </select>  
-                    </div>
+                        <div class="mb-3">
+                            <label for="select" class="form-label formulario_titulos">Origem:</label>
+                            <select class="form-select" name="origem" id="origem">
+                                <option value="celular">Celular</option>
+                                <option value="fixo">Smart TV</option>
+                                <option value="computador">Computador</option>
+                                <option value="notebook">Notebook</option>
+                            </select>  
+                        </div>
 
-                    <div class="mb-3">
-                        <label id="text5" for="data">Data do Contato:</label> 
-                        <input type="date" class="form-control" id="data" name="data" required>
-                    </div>
+                        <div class="mb-3">
+                            <label class="formulario_titulos" for="data">Data do Contato:</label> 
+                            <input type="date" class="form-control" id="data" name="data" required>
+                        </div>
 
-                    <div class="mb-3">
-                        <p id="text3">Observação</p>
-                        <textarea class="form-control" name="observacao" rows="3"></textarea>
-                    </div>    
-                        <br>
-                        
-                    <div class="mb-3">    
-                         <input  class="btn btn-primary botao" type="submit" name="Cadastrar" value="Cadastrar">
-                    </div>    
-                        <br>
-                </form>
+                        <div class="mb-3">
+                            <p class="formulario_titulos">Observação</p>
+                            <textarea class="form-control" name="observacao" rows="3"></textarea>
+                        </div>    
+                            <br>
+                            
+                        <div class="mb-3">    
+                            <input  class="btn btn-primary botao" type="submit" name="Cadastrar" value="Cadastrar">
+                        </div>    
+                            <br>
+                    </form>
+                </div>
             </div>
-
     </div>        
   </body>
 </html>

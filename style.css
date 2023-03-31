@@ -1,60 +1,3 @@
-nav {
-    background-color: #007BFF;
-}
-
-.nav__novo {
-    display: flex;
-    gap: 50px;
-    padding: 1rem;
-}
-
-#text {
-    font-size: 23px;
-    padding-top: 7px;
-    padding-left: 10px;
-    color: rgb(247, 243, 243);
-}
-#text4 {
-    font-size: 18px;
-    padding-left: 15px;
-    padding-top: 10px;
-    color: white;
-}
-#text2 {
-    font-size: 25px;
-    font-weight: bold;
-    text-align: start;
-   
-}
-#text2--novo {
-    font-size: 25px;
-    font-weight: bold;
-    text-align: start;
-}
-#textMeio{
-    font-size: 25px;
-    font-weight: bold;
-    text-align: center;
-    padding-top: 20px;
-    word-spacing: 15px;
-}
-#textMeiodados{
-    font-size: 20px;
-    font-weight: bold;
-    padding-left: 350px;
-    padding-top: 20px;
-}
-#text3 {
-    font-size: 18px;
-    text-align: start;
-}
-#text5{
-    font-size: 18px;
-    text-align: start;
-    padding-bottom: 10px;
-  
-}
-
 body {
     background-color: rgb(215, 215, 215)
 }
@@ -64,9 +7,49 @@ body {
     padding: 0%;
 }
 
+
+/* index.php */
+nav {
+    background-color: #007BFF;
+}
+
+.title {
+    font-size: 23px;
+    padding-top: 7px;
+    padding-left: 10px;
+    color: rgb(247, 243, 243);
+}
+
+.Options {
+    font-size: 18px;
+    padding-left: 15px;
+    padding-top: 10px;
+    color: white;
+}
+
+.subtitle{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: start;
+    padding-left: 25px;
+    padding-top: 20px;
+}
+
+.subtitle_two{
+    font-size: 18px;
+    text-align: start;
+    padding-left: 25px;
+}
+
 .formulario{
     margin: 2%;
     padding-bottom: 1%;
+}
+
+.formulario_titulos{
+    font-size: 18px;
+    text-align: start;
+    padding-bottom: 10px;
 }
 
 .botao{
@@ -74,16 +57,36 @@ body {
     height: 40px;
 }
 
-.tabela{
-    max-width: 95vw;
+/* dados.php */
+
+.consulta{
+    display: flex;
+    padding: 1rem;
+    padding-left: 160px;
 }
 
-.tabela__dados{
-    font-size: 25px;
-    font-weight: bold;
-}
-
-.centralizar {
+div.linha {
     display: flex;
     justify-content: center;
+}
+
+.tabela{
+    max-width: 65vw;
+}
+
+.tabela_linha {
+    gap: 50px;
+    height: 4rem;
+    padding: 1rem;
+    background-color: #007BFF;
+}
+
+.tabela_dados{
+    font-size: 1.2rem;
+    font-weight: 700; 
+    padding-left: 10px;
+}
+
+.tabela_c{
+    border: 1px solid black;
 }
