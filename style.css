@@ -34,6 +34,10 @@ nav {
     padding-left: 25px;
     padding-top: 20px;
 }
+.subtitle_2{
+    font-size: 25px;
+    font-weight: bold;
+}
 
 .subtitle_two{
     font-size: 18px;
@@ -60,9 +64,8 @@ nav {
 /* dados.php */
 
 .consulta{
-    display: flex;
-    padding: 1rem;
-    padding-left: 160px;
+    padding-top: 40px;
+    padding-bottom: 20px;
 }
 
 div.linha {
@@ -76,7 +79,8 @@ div.linha {
 
 .tabela_linha {
     gap: 50px;
-    height: 4rem;
+    height: 3.5rem;
+    width: 2rem;
     padding: 1rem;
     background-color: #007BFF;
 }

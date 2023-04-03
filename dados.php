@@ -33,72 +33,69 @@
                 </div>    
             </div>
 
-            <div class="row">
-                <div class="col">    
-                    <h2 class="subtitle consulta">Consultar - Contatos Agendados</h2>
-                </div>
-            </div>   
             
-            <div class="row linha"> 
-                <table class="tabela">
-                    <thead>
-                        <tr class="bg-primary tabela_linha">
-                            <td class="tabela_dados">Nome</td>
-                            <td class="tabela_dados">Telefone</td>
-                            <td class="tabela_dados">Origem</td>
-                            <td class="tabela_dados">Contato</td>
-                            <td class="tabela_dados">Observação</td>
-                            <td class="tabela_dados">Ação</td>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-                        <tr>
-                            <td class="tabela_c">
-                                <?php
-                                require_once("class.php");
-                                $principal = new Principal();
-                                $principal->setNome($_POST['nome']);
-                                echo $principal->getNome();
-                                ?>
-                            </td>
-                            <td class="tabela_c">
-                                <?php
-                                require_once("class.php");
-                                $principal = new Principal();
-                                $principal->setTelefone($_POST['telefone']);
-                                echo $principal->getTelefone();
-                                ?>
-                            </td>
-                            <td class="tabela_c">
-                                <?php
-                                require_once("class.php");
-                                $principal = new Principal();
-                                $principal->setOrigem($_POST['origem']);
-                                echo $principal->getOrigem();
-                                ?>
-                            </td>
-                            <td class="tabela_c">
-                                <?php
-                                require_once("class.php");
-                                $principal = new Principal();
-                                $principal->setData($_POST['data']);
-                                echo $principal->getData();
-                                ?>
-                            </td>
-                            <td class="tabela_c">
-                                <?php
-                                require_once("class.php");
-                                $principal = new Principal();
-                                $principal->setObservacao($_POST['observacao']);
-                                echo $principal->getObservacao();
-                                ?> 
-                            </td>
-                            <td class="tabela_c">
-                            </td>    
-                        </tr>
-                    </tbody>
-                </table>   
+            <div class="linha">
+                <div class="table-responsive"> 
+                <h2 class="subtitle_2 consulta">Consultar - Contatos Agendados</h2>  
+                    <table class="tabela table table-borderless">
+                        <thead>
+                            <tr class="tabela_linha">
+                                <td class="tabela_dados">Nome</td>
+                                <td class="tabela_dados">Telefone</td>
+                                <td class="tabela_dados">Origem</td>
+                                <td class="tabela_dados">Contato</td>
+                                <td class="tabela_dados">Observação</td>
+                                <td class="tabela_dados">Ação</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tabela_c">
+                                    <?php
+                                    require_once("class.php");
+                                    $principal = new Principal();
+                                    $principal->setNome($_POST['nome']);
+                                    echo $principal->getNome();
+                                    ?>
+                                </td>
+                                <td class="tabela_c">
+                                    <?php
+                                    require_once("class.php");
+                                    $principal = new Principal();
+                                    $principal->setTelefone($_POST['telefone']);
+                                    echo $principal->getTelefone();
+                                    ?>
+                                </td>
+                                <td class="tabela_c">
+                                    <?php
+                                    require_once("class.php");
+                                    $principal = new Principal();
+                                    $principal->setOrigem($_POST['origem']);
+                                    echo $principal->getOrigem();
+                                    ?>
+                                </td>
+                                <td class="tabela_c">
+                                    <?php
+                                    require_once("class.php");
+                                    $principal = new Principal();
+                                    $principal->setData($_POST['data']);
+                                    echo $principal->getData();
+                                    ?>
+                                </td>
+                                <td class="tabela_c">
+                                    <?php
+                                    require_once("class.php");
+                                    $principal = new Principal();
+                                    $principal->setObservacao($_POST['observacao']);
+                                    echo $principal->getObservacao();
+                                    ?> 
+                                </td>
+                                <td class="tabela_c">
+                                </td>    
+                            </tr>
+                        </tbody>
+                    </table>   
+                </div>
             </div>
         <br>
         <br>
