@@ -35,8 +35,9 @@
 
             
             <div class="linha">
+            <h2 class="subtitle_2 consulta">Consultar - Contatos Agendados</h2>
                 <div class="table-responsive"> 
-                <h2 class="subtitle_2 consulta">Consultar - Contatos Agendados</h2>  
+                
                     <table class="tabela table table-borderless">
                         <thead>
                             <tr class="tabela_linha">
