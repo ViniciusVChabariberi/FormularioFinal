@@ -94,6 +94,8 @@
                                 echo $principal->getObservacao();
                                 ?> 
                             </td>
+                            <td class="tabela_c">
+                            </td>    
                         </tr>
                     </tbody>
                 </table>   
